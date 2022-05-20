@@ -1,1 +1,1 @@
-web: gunicorn dhruv.wsgi 
+web gunicorn dhruv.wsgi:application --log-file -

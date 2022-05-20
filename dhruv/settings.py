@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 #import django_heroku
 import os
 import django_heroku
-
+import dj_database_url
 from pathlib import Path
 
 
@@ -151,11 +151,11 @@ USE_TZ = True
 #    os.path.join(BASE_DIR,'static')
 #]
 SESSION_COOKIE_SECURE = not DEBUG
-STATIC_ROOT=os.path.join(BASE_DIR,'static')
+STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
 STATIC_URL = '/static/'
 #django_heroku.settings(locals())
-MEDIA_URL='/media/'
-MEDIA_ROOT=os.path.join(BASE_DIR,'media')
+#MEDIA_URL='/media/'
+#MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
