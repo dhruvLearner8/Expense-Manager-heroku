@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-s3va7669y!tv@-r*r#lf-qq69^i@09%u&6+^u-j-3p+3_p5tfc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'expense-managerr.herokuapp.com',
@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'dhruv.wsgi.application'
 
 
 
-DATABASES = {
+'''DATABASES = {
     'default': {
         'ENGINE' : 'django.db.backends.postgresql',
         'NAME' :'dinero2',
@@ -94,18 +94,18 @@ DATABASES = {
         'PASSWORD':'1234',
         'HOST':'localhost'
     }
-}
+}'''
 
-'''DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE' : 'django.db.backends.postgresql',
-        'NAME' :'d7dhaiceh68p5t',
-        'USER':'bdmltxdxmyynpj',
-        'PASSWORD':'f7f815528e401d5338189c9f2a72928e87634087765e39cde5a962d07353be2d',
-        'HOST':'ec2-54-236-137-173.compute-1.amazonaws.com',
+        'NAME' :'d3uupscldh0j6l',
+        'USER':'dcgzprxvfsbtfu',
+        'PASSWORD':'0e55d0c473c44f098b51f270047c820dab05b44b58b826daffcd04730b207c9e',
+        'HOST':'ec2-52-86-115-245.compute-1.amazonaws.com',
         'PORT':'5432'
     }
-}'''
+}
 
 
 
